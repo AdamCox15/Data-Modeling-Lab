@@ -1,0 +1,34 @@
+-- CREATE TABLE users(
+--   user_id SERIAL PRIMARY KEY,
+--   password TEXT,
+--   email VARCHAR(30)
+--   );
+
+-- CREATE TABLE recipes(
+--   recipe_id SERIAL PRIMARY KEY,
+--   user_id INTEGER REFERENCES users(user_id),
+--   cooking_directions TEXT
+--   );
+
+-- CREATE TABLE ingredients(
+--   ingredient_id SERIAL PRIMARY KEY,
+--   ingredient_name VARCHAR(30)
+--   );
+
+-- CREATE TABLE ingredientsRecipe(
+--   ingredientsRecipe_id SERIAL PRIMARY KEY,
+--   ingredient_id INT REFERENCES ingredients(ingredient_id),
+--   recipe_id INT REFERENCES recipes(recipe_id)
+--   );
+
+-- CREATE TABLE shoopingList(
+--   shoppingList_id SERIAL PRIMARY KEY,
+--   user_id INT REFERENCES users(user_id),
+--   list TEXT
+--   );
+
+-- CREATE TABLE ingredientsShppoingList(
+--   ingredientsShoppingList_id SERIAL PRIMARY KEY,
+--   ingredient_id INT REFERENCES ingredients(ingredient_id),
+--   shoppingList_id INT REFERENCES shoopingList(shoppingList_id)
+--   );
